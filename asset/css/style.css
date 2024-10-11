@@ -64,7 +64,7 @@
   border: 1px solid #e2e8f0;
   margin-top: 20px;
 }
-.post-content p {
+.post-all-content p {
   color: #222;
   font-size: 18.8px;
   margin-bottom: 18px;
@@ -107,6 +107,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 15px;
+
 }
 
 .fb-testimonial img,
