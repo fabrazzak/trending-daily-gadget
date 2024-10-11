@@ -1036,30 +1036,33 @@
                 </div>
 
 
+                <div class="mt-7">
+                    <hr>
+                </div>
 
-                <hr>
+
                 <div class="comments" id="comments">
 
 
                     <div style="margin-top:10px;">
-                        <h4 class="font-700" style="margin-bottom: 10px">5 Comments</h4>
+                        <h4 class="font-700 mb-[10px] font-semibold">5 Comments</h4>
 
-                        <table width="100%" style="margin-bottom:20px;" id="topTable">
+                        <table width="100%" class="mb-5"  id="topTable">
                             <tbody>
                                 <tr>
                                     <td width="65px" valign="top">
                                         <img class="lazyload" src="asset/img/profilepic.svg" width="48"
                                             style="margin-top:-1px;">
                                     </td>
-                                    <td valign="middle" class="styleInput">
+                                    <td valign="middle" id="styleInput" class="styleInput">
                                         <input id="newPostInput" type="text" placeholder="Add comments"
                                             style="border:0px; font-size:14px; height:40px; width: 100%; padding-left: 8px;">
 
-                                        <div id="newPostArea"
-                                            style="background:#F6F7F9; height:40px; width:100%; display: none;">
+                                        <div id="newPostArea" class="hidden"
+                                            style="background:#F6F7F9; height:40px; width:100%; ">
                                             <span class="busyMsg"
                                                 style="padding-left:10px; display: none; float:left; margin-top:13px; color: black; font-weight: bold; font-size:14px;">comments.server_is_busy_please_enter_your_commment_later</span>
-                                            <img class="lazyload post-btn" data-src="asset/img/post.svg"
+                                            <img class="lazyload post-btn" src="/asset/img/post.svg"
                                                 style="cursor:pointer; float: right; margin-top:10px; margin-right:10px;"
                                                 id="newPostButton">
                                             <div style="clear: both;"></div>
@@ -1068,6 +1071,10 @@
                                 </tr>
                             </tbody>
                         </table>
+
+                        <div id="new-comment">
+
+                        </div>
                         <div id="cm1" class="mainComments">
                             <div class="profilePic"><img class="lazy" src="asset/img/jude-thompson.jpg"></div>
                             <div class="commentContent">
@@ -1209,14 +1216,6 @@
                     </div>
 
                 </div>
-
-                <script>
-                    $(function () {
-                        $('.date').each(function () {
-                            $(this).text(moment().subtract($(this).data('ago'), 'days').format('LL'));
-                        })
-                    });
-                </script>
 
 
             </div>
@@ -1395,6 +1394,82 @@
             <a href="https://www.dmca.com/"><img src="asset/img/dmca.png" alt="dmca-img" srcset=""></a>
         </div>
     </footer>
+
+
+
+    <script>
+
+        document.getElementById("styleInput").addEventListener('click', function () {
+
+            const postArea = document.getElementById("newPostArea");
+            postArea.classList.remove("hidden")
+
+        });
+
+
+
+        document.getElementById("newPostButton").addEventListener('click', function () {
+
+            const commentText = document.getElementById("newPostInput").value;
+
+
+
+
+            function insertAsFirstChild(parentContainer, newElement) {
+                document.getElementById("newPostInput").value = " ";
+                if (parentContainer.firstChild) {
+                    parentContainer.insertBefore(newElement, parentContainer.firstChild);
+                } else {
+                    parentContainer.appendChild(newElement);
+                }
+
+            }
+
+            // Example usage:
+            ;
+
+
+
+            const newCommentContainer = document.getElementById("new-comment");
+            const newDiv = document.createElement('div');
+            newDiv.innerHTML = `
+                    
+                     <div id="cm1" class="mainComments">
+                            <div class="profilePic"><img class="lazyload" src="asset/img/profilepic.svg" width="48"
+                                            style="margin-top:-1px;"></div>
+                            <div class="commentContent">
+                                <span class="userName">Guest</span> <span class="userInfo">  </span>                             </span><br>
+                                <span class="usersComments">${commentText}
+                                    <br>
+                                </span>
+                                <span class="commentImgs"></span>
+                                <span class="commentFuncLine">
+                                    <span class="commentTime"> <span class="date"
+                                            data-ago='3'></span>&nbsp;·&nbsp;</span>
+                                    <span class="likeButton pointer">Like</span>
+                                    <span class="unlikeButton pointer" style="display: none;">Unlike</span>
+                                    · <span class="replyButton pointer">Reply</span> · <img
+                                        src="asset/img/likeicon.png"><span class="commentLikes">24</span>
+                                </span>
+                                <div class="commentSpacer"></div>
+                                <!--Insert replies below-->
+                                <!-- userReply -->
+                            </div>
+                        </div>
+                    
+                    `
+            insertAsFirstChild(newCommentContainer, newDiv);
+
+
+
+
+
+
+
+        });
+
+
+    </script>
 
 
 
