@@ -55,8 +55,8 @@
 }
 
 .quote {
-  background: url(/asset/img/quote-top-left.svg) no-repeat top 25px left 25px,
-    url(/asset/img/quote-bottom-right.svg) no-repeat bottom 25px right 15px,
+  background: url(../img/quote-top-left.svg) no-repeat top 25px left 25px,
+    url(../img/quote-bottom-right.svg) no-repeat bottom 25px right 15px,
     #fafafa;
   padding: 30px 41px 15px 70px;
   margin-bottom: 18.8px;
@@ -715,8 +715,8 @@ button:focus {
 
   .quote {
     margin-bottom: 18px;
-    background: url(/asset/img/quote-top-left.svg) no-repeat top 10px left 10px,
-      url(/asset/img/quote-bottom-right.svg) no-repeat bottom 10px right 10px,
+    background: url(../img/quote-top-left.svg) no-repeat top 10px left 10px,
+      url(../img/quote-bottom-right.svg) no-repeat bottom 10px right 10px,
       #fafafa;
     padding: 10px 10px 10px 37px;
     background-size: 20px;
