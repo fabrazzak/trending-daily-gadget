@@ -59,11 +59,15 @@
     url(../img/quote-bottom-right.svg) no-repeat bottom 25px right 15px,
     #fafafa;
   padding: 30px 41px 15px 70px;
-  margin-bottom: 18.8px;
+  margin-bottom: 20px;
   color: #3d3d4e;
   border: 1px solid #e2e8f0;
   margin-top: 20px;
   
+}
+.quote p{
+  font-size: 19.8px !important;
+
 }
 .post-all-content p {
   color: #222;
@@ -453,12 +457,10 @@
   line-height: 22px;
 }
 
-/* .commentLikes {
-                        color: black;
-                    } */
 
-.commentTime {
-  color: #999;
+
+.date {
+  color: #999 !important;
 }
 
 .commentFuncLine,
@@ -698,6 +700,9 @@ button:focus {
   min-width: 275px;
   max-width: 275px;
   height: 100%;
+}
+.commentTime{
+  color: #999;
 }
 
 /* footer section  css */
