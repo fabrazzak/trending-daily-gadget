@@ -73,12 +73,6 @@
   padding: 2px;
 }
 
-.quote .text {
-  margin-bottom: 0px;
-
-  letter-spacing: 0.5px;
-  
-}
 
 .photo-logo {
   height: 50px;
@@ -814,7 +808,34 @@ button:focus {
 .text-bar-4 {
   left: 75%;
 }
+
+.quote .text {
+  margin-bottom: 0px;
+ font-size: calc(14.96667px + .46667vw);
+  
 }
+.post-all-content p {
+  font-size: calc(14.56667px + .411vw);
+  padding: 0;
+  
+}
+.fix-text {
+  font-size: calc(14.56667px + .311vw) !important;
+  padding: 0;
+  
+}
+.button {
+ 
+  font-size: 20px !important;
+  
+}
+
+
+}
+
+
+
+
 
 
 @media screen and (max-width: 380px) {
