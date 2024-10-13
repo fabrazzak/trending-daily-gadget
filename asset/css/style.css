@@ -814,7 +814,7 @@ button:focus {
   left: 75%;
 }
 
-.quote .text {
+.quote p em{
   margin-bottom: 0px;
  font-size: calc(14.96667px + .46667vw);
   
