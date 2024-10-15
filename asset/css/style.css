@@ -3,6 +3,12 @@
   font-family: "Open Sans", sans-serif;
 }
 
+/* SF Pro Display  */
+@font-face {
+  font-family: "SF";
+  src: url(../font/regular.OTF);
+}
+
 /* main css  */
 
 .link-color {
@@ -110,6 +116,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 15px;
+  font-family: FS;
+  
 }
 
 .fb-testimonial img,
@@ -181,9 +189,17 @@
   font-weight: 400;
   letter-spacing: 0.5px;
   line-height: 18px;
+  font-family: 'SF';
+}
+.profile-name {
+    font-family: 'SF';
 }
 .fb-testimonial .fb-post .top-s .post-content img {
   width: 100%;
+}
+.fb-testimonial .color-grey-faded {
+    color: #62676f;
+    font-family: 'SF';
 }
 .fb-testimonial .fb-post .like-section .top-part {
   -ms-flex-pack: justify;
@@ -236,6 +252,7 @@
   margin-top: 10px;
   padding-bottom: 0.5rem;
   padding-top: 0.5rem;
+  font-family: 'SF';
 }
 .fb-testimonial .fb-post .like-section .bottom-part div {
   -ms-flex-align: center;
@@ -284,6 +301,7 @@
   letter-spacing: 0.5px;
   line-height: 13px;
   margin-bottom: 4px;
+  font-family: 'SF';
 }
 .fb-testimonial .fb-post .comment-content .comment-text {
   --tw-text-opacity: 1;
@@ -292,6 +310,13 @@
   font-weight: 400;
   letter-spacing: 0.2px;
   line-height: 16px;
+  font-family: 'SF';
+
+}
+.fb-testimonial .fb-post .comment-content .comment-text.comment-text-fix {
+  letter-spacing: 0.3px;
+
+
 }
 .fb-testimonial .fb-post .comment-lks {
   --tw-text-opacity: 1;
@@ -301,6 +326,7 @@
   letter-spacing: 0.5px;
   line-height: 12px;
   margin-bottom: 5px;
+  font-family: 'SF';
 }
 .fb-testimonial .fb-post .reply {
   margin-left: -25px;
@@ -624,6 +650,8 @@ button:focus {
   margin-top: 10px;
 }
 
+
+
 /* aside css  */
 
 .button {
@@ -850,12 +878,17 @@ button:focus {
   }
   .text-bar-2 {
     left: 88%;
-  }.text-bar-3 {
+  }
+  .text-bar-3 {
     left: 70%;
-  }.text-bar-4 {
+  }
+  .text-bar-4 {
     left: 80%;
   }
-
+  .fb-testimonial .fb-post .top-s .post-content.post-content-fix-text {  
+    letter-spacing: 0.6px;
+  
+}
 }
 
 @media screen and (max-width: 380px) {
