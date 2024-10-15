@@ -849,6 +849,11 @@ button:focus {
   .post-all-content .fix-text {
     font-size: calc(14.66667px + 0.41667vw);
   }
+ .post-all-content .fix-text-mob {
+    font-size: calc(14.41667px + 0.4667vw);
+  }.post-all-content .fix-text-mob2 {
+    font-size: calc(14.44667px + 0.4667vw);
+  }
 
   .button {
     font-size: 20px !important;
