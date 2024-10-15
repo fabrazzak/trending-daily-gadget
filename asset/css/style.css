@@ -36,7 +36,7 @@
 .url-link {
   text-decoration: underline;
   font-weight: 700;
-  font-size: 19px;
+  font-size: 18.8px;
   color: #405cb3;
   transition: color 0.2s linear;
   background-color: transparent;
@@ -51,24 +51,21 @@
   line-height: 55px;
   color: #2f2f2f;
   font-weight: 700;
-  
 }
 
 .quote {
   background: url(../img/quote-top-left.svg) no-repeat top 25px left 25px,
-    url(../img/quote-bottom-right.svg) no-repeat bottom 25px right 15px,
-    #fafafa;
+    url(../img/quote-bottom-right.svg) no-repeat bottom 25px right 15px, #fafafa;
   padding: 30px 41px 15px 70px;
   margin-bottom: 20px;
   color: #3d3d4e;
   border: 1px solid #e2e8f0;
   margin-top: 20px;
-  
 }
-.quote p{
-  font-size: 19.8px !important;
+.quote p em {
+  font-size: 19.8px;
+}
 
-}
 .post-all-content p {
   color: #222;
   font-size: 18.8px;
@@ -77,9 +74,8 @@
   padding: 2px;
 }
 
-
-.fix-text-update {
- font-size: 18.8px;  
+.post-all-content .fix-text {
+  font-size: 18.6px;
 }
 
 .photo-logo {
@@ -114,7 +110,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 15px;
-
 }
 
 .fb-testimonial img,
@@ -342,7 +337,6 @@
 
 .text-bar-1 {
   left: 85%;
-  
 }
 .text-bar-2 {
   left: 95%;
@@ -354,14 +348,9 @@
   left: 85%;
 }
 
-
-.tracking{
+.tracking {
   letter-spacing: 0.3px;
 }
-
-
-
-
 
 .progress::-webkit-progress-value {
   background-color: #195ca3;
@@ -388,6 +377,7 @@
 
 .styleInput {
   border: 1px solid #ccc;
+  height: 65px;
 }
 
 .mainComments {
@@ -460,8 +450,6 @@
   font-size: 14px;
   line-height: 22px;
 }
-
-
 
 .date {
   color: #999 !important;
@@ -667,7 +655,6 @@ button:focus {
 
 .button.button-sidebar {
   font-size: 17px !important;
-
 }
 
 .byFeature-star-img {
@@ -705,7 +692,7 @@ button:focus {
   max-width: 275px;
   height: 100%;
 }
-.commentTime{
+.commentTime {
   color: #999;
 }
 
@@ -757,7 +744,6 @@ button:focus {
   }
 }
 
-
 /* @media css  max-width: 768px */
 
 @media screen and (max-width: 768px) {
@@ -775,7 +761,9 @@ button:focus {
     font-size: 28px;
     line-height: 38px;
   }
-
+  .container-w {
+    padding: 0 15px;
+  }
   .photo-logo {
     height: 30px;
     height: 6vw;
@@ -805,49 +793,70 @@ button:focus {
   }
 
   .text-bar-1 {
-  left: 75%;
-  
+    left: 75%;
+  }
+  .text-bar-2 {
+    left: 85%;
+  }
+  .text-bar-3 {
+    left: 65%;
+  }
+  .text-bar-4 {
+    left: 75%;
+  }
+
+  .quote p em {
+    margin-bottom: 0px;
+    font-size: calc(14.66667px + 0.61667vw);
+  }
+
+  .quote p em {
+    padding: 2px;
+  }
+
+  .post-all-content p {
+    font-size: calc(14.66667px + 0.41667vw);
+    padding: 0;
+  }
+  .post-all-content .fix-text {
+    font-size: calc(14.66667px + 0.41667vw);
+  }
+
+  .button {
+    font-size: 20px !important;
+  }
+
+  .commentContent {
+    padding-left: 12px;
+    display: inline-block;
+    white-space: normal;
+    padding-right: 60px;
+  }
+  .progress {
+    margin-bottom: 10px;
+    height: 20px;
+  }
+  .progress-text {
+    position: absolute;
+    color: white;
+    padding-bottom: 3px !important;
+    top: 0;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .text-bar-1 {
+    left: 80%;
+  }
+  .text-bar-2 {
+    left: 88%;
+  }.text-bar-3 {
+    left: 70%;
+  }.text-bar-4 {
+    left: 80%;
+  }
+
 }
-.text-bar-2 {
-  left: 85%;
-}
-.text-bar-3 {
-  left: 65%;
-}
-.text-bar-4 {
-  left: 75%;
-}
-
-.quote p em{
-  margin-bottom: 0px;
- font-size: calc(14.96667px + .46667vw);
-  
-}
-.post-all-content p {
-  font-size: calc(14.56667px + .411vw);
-  padding: 0;
-  
-}
-.fix-text {
-  font-size: calc(14.56667px + .311vw) !important;
-  padding: 0;
-  
-}
-
-
-.button {
- 
-  font-size: 20px !important;
-  
-}
-
-
-}
-
-
-
-
-
 
 @media screen and (max-width: 380px) {
   .newReplyTable {
