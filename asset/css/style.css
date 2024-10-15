@@ -78,6 +78,10 @@
 }
 
 
+.fix-text-update {
+ font-size: 18.8px;  
+}
+
 .photo-logo {
   height: 50px;
   margin-bottom: 0 !important;
@@ -417,9 +421,9 @@
   padding-left: 12px;
   display: inline-block;
   white-space: normal;
-  padding-right: 60px;
+  padding-right: 72px;
 }
-.commentContent img {
+.commentFuncLine img {
   width: 18px;
   height: 14px;
   margin-top: 10px;
@@ -829,6 +833,8 @@ button:focus {
   padding: 0;
   
 }
+
+
 .button {
  
   font-size: 20px !important;
