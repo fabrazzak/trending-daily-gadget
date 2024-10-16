@@ -38,7 +38,7 @@
                     <div class="flex justify-start content-center items-center gap-2">
                         <div class="flex gap-2 flex-wrap  content-center items-center ">
                             <img src="asset/img/logo-icon.svg" width="30px" alt="" srcset="" class="">
-                            <p class="md:text-3xl text-[22px] tracking-[-2px] ">Tech<span
+                            <p class="logo-text tracking-[-2px] ">Tech<span
                                     class="font-semibold  ">Trends</span> </p>
                             <span class="af"></span>
                         </div>
@@ -77,18 +77,18 @@
 
                 <div class=" flex  items-center justify-between mt-0px mb-[15px] md:my-5">
 
-                    <div class=" text-[14px] flex  content-center gap-1 flex-wrap ">
+                    <div class="  flex  written-text content-center gap-1 flex-wrap ">
                         <img src="asset/img/author.jpg" alt=""
                             class=" md:hidden inline rounded-full mx-[5px] w-[35px] h-[35px]   cb md:relative">
-                        <div class="flex-wrap  text-[12px] md:text-[14px] ">
+                        <div class="flex-wrap   ">
                             <img src="asset/img/4-5_grey.svg" alt="" srcset=""
-                                class=" w-[100px] -mt-1 mr-[5px] ci hidden md:inline">
-                            <span class="">Written By</span>
+                                class=" written-rating -mt-1 mr-[5px] ci hidden md:inline">
+                            <span class=" text-[#808080] ">Written By</span>
                             <img src="asset/img/author.jpg" alt=""
                                 class=" hidden md:inline  rounded-full mx-[5px] w-[35px] h-[35px] md:h-[25px] md:w-[25px] -mt-[2px] cb md:relative">
                             <span class=" font-bold gray">Marcus Orington</span>
                             <br class="cy md:hidden">
-                            <span class="bi">on</span>
+                            <span class="bi text-[#808080] ">on</span>
                             <span id="post-date" class="text-[#808080]  font-[400]" data-ago="10">Oct 3,
                                 2024</span>
                         </div>
@@ -96,7 +96,7 @@
                     </div>
 
                     <div class="flex  flex-col items-end justify-center">
-                        <div class="md:text-[14px] text-[12px] gray flex  gap-1">
+                        <div class="like-text gray flex  gap-1">
                             <img data-src="asset/img/likeicon1.png" src="asset/img/likeicon1.png" alt="like img"
                                 srcset="" class="w-[17px] md:h-[17px] h-[14px]      ">
                             <span class="font-semibold  ">112.5K</span>
@@ -877,7 +877,7 @@
                                                 </button>
                                             </div>
                                         </div>
-                                        <div class="post-content post-content-fix-text text-[14px] px-3 mb-3">I just received Pro PowerSave. I
+                                        <div class="post-content post-content-fix-text2 text-[14px] px-3 mb-3">I just received Pro PowerSave. I
                                             regret I didn’t
                                             buy it sooner. If anyone I know wants to cut electricity bills at least by
                                             half I highly
@@ -1656,11 +1656,11 @@
         }
 
         document.getElementById("post-date").innerText = moment().subtract(10, 'days').format('MMM D, YYYY')
-        document.getElementById("three-day-ago").innerText = moment().subtract(3, 'days').format('MMM D, YYYY')
-        document.getElementById("four-day-ago").innerText = moment().subtract(4, 'days').format('MMM D, YYYY')
-        document.getElementById("three-day-ago-two").innerText = moment().subtract(3, 'days').format('MMM D, YYYY')
-        document.getElementById("five-day-ago").innerText = moment().subtract(5, 'days').format('MMM D, YYYY')
-        document.getElementById("six-day-ago").innerText = moment().subtract(6, 'days').format('MMM D, YYYY')
+        document.getElementById("three-day-ago").innerText = moment().subtract(3, 'days').format('MMMM D, YYYY')
+        document.getElementById("four-day-ago").innerText = moment().subtract(4, 'days').format('MMMM D, YYYY')
+        document.getElementById("three-day-ago-two").innerText = moment().subtract(3, 'days').format('MMMM D, YYYY')
+        document.getElementById("five-day-ago").innerText = moment().subtract(5, 'days').format('MMMM D, YYYY')
+        document.getElementById("six-day-ago").innerText = moment().subtract(6, 'days').format('MMMM D, YYYY')
 
    
 
