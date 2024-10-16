@@ -8,6 +8,10 @@
   font-family: "SF";
   src: url(../font/SFProDisplay-Regular.woff2);
 }
+@font-face {
+  font-family: "SF Medium";
+  src: url(../font/SFProDisplay-Medium.woff2);
+}
 
 /* main css  */
 
@@ -300,7 +304,7 @@
   letter-spacing: 0.5px;
   line-height: 13px;
   margin-bottom: 4px;
-  font-family: "SF";
+  font-family: "SF Medium";
 }
 .fb-testimonial .fb-post .comment-content .comment-text {
   --tw-text-opacity: 1;
