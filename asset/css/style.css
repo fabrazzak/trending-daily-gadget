@@ -66,16 +66,25 @@
 .quote {
   background: url(../img/quote-top-left.svg) no-repeat top 25px left 25px,
     url(../img/quote-bottom-right.svg) no-repeat bottom 25px right 15px, #fafafa;
-  padding: 30px 41px 15px 70px;
-  margin-bottom: 20px;
+  padding: 23px 41px 15px 70px;
+  margin-bottom: 18px;
   color: #3d3d4e;
   border: 1px solid #e2e8f0;
-  margin-top: 20px;
+  margin-top: 18.8px;
 }
 .quote p em {
   font-size: 19.8px;
 }
-
+.post-all-content .quote p {
+  margin-bottom: 0px ;
+}
+.trending-text{
+  font-size: 16px;
+}
+.trending-img{
+  margin-top: -2px;
+  
+}
 .post-all-content p {
   color: #222;
   font-size: 18.8px;
@@ -267,12 +276,15 @@
 }
 .fb-testimonial .fb-post .like-section .bottom-part div img {
   margin-bottom: 0;
+  
+
 }
 .fb-testimonial .fb-post .like-section .bottom-part span {
   --tw-text-opacity: 1;
   color: rgb(113 128 150 / var(--tw-text-opacity));
   font-size: 12px;
   padding-left: 5px;
+   font-family: "SF Medium";
 }
 .fb-testimonial .fb-post .all-comments {
   --tw-text-opacity: 1;
@@ -496,7 +508,7 @@
   color: #3658a6;
   line-height: 30px;
   display: flex;
-  gap: 5px;
+  gap: 3px;
 }
 
 .pointer {
@@ -756,6 +768,20 @@ button:focus {
   font-size: 14px;
 
 }
+ .product-title
+   {
+    font-size: 20px;
+  }
+  .fix-text-step-1{
+    letter-spacing: -.1px;
+  }
+  .tech-bottom-text{
+    font-size: 25px;
+    letter-spacing: -2px;
+  }
+  .logo-img{
+    width: 30px;
+  }
 @media screen and (max-width: 1140px) {
   .logo-text {
     font-size: 22px;
@@ -767,13 +793,35 @@ button:focus {
   .written-text {
     font-size: 12px;
   }
+
   .like-text{
   font-size: 12px;
+  }
 
+  .trending-text{
+  font-size: 12px;
+  letter-spacing: -.15px;
+}
+.trending-img{
+  margin-top: -5px;
+  
+}
+.product-title
+   {
+    font-size: 18px;
+  }
+.tech-bottom-text{
+    font-size: 22px;
+    letter-spacing: -2px;
+  }
+  
+   .logo-img {
+    width: 20px;
+  }
 }
 
   /* article css  */
-}
+
 
 /* @media css  max-width: 920px */
 
@@ -802,6 +850,7 @@ button:focus {
   .sidebar {
     display: none;
   }
+  
 }
 /* @media css  max-width: 800px */
 
